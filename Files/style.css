@@ -471,9 +471,23 @@
   font-weight: 600;
 }
 
-.logo {
-  width: 60px;
-  height: 60px;
-  opacity: 0; /* hidden before animation */
-  transform: scale(0);
+
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;   /* Tumhara orange */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e68900;   /* Darker orange on hover */
 }
