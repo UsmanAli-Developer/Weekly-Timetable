@@ -6,12 +6,7 @@
       font-family: 'Poppins', sans-serif;
     }
     
-  .logo {
-   width: 60px;
-   height: 60px;
-   opacity: 0;
-   transform: scale(0);
-   }
+
 
     body {
       background: linear-gradient(135deg, #eef2f3, #d9e4ec);
@@ -19,6 +14,13 @@
       padding: 20px;
       transition: background 0.4s, color 0.4s;
     }
+
+   .Head h1 {
+   font-family: 'Luckiest Guy', cursive;
+   font-size: 4rem;
+   letter-spacing: 2px;
+   text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* optional depth */
+  }
   
 
     body.dark {
@@ -30,6 +32,7 @@
       text-align: center;
       margin-bottom: 20px;
       font-size: 2rem;
+      font-family: 'Luckiest Guy', cursive;
     }
     
 
@@ -91,7 +94,7 @@
     .day-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      cursor: text;
+      cursor: pointer;
     }
 
     .day-card h2 {
@@ -100,6 +103,10 @@
       color: #4a90e2;
       border-bottom: 2px solid #eee;
       padding-bottom: 5px;
+    }
+    .highlight{
+      animation: pulse 1.5s infinite;
+      border: 2px solid #27ae60;
     }
 
     .period {
@@ -182,10 +189,6 @@
     .exam-box { background: #e74c3c; }
 
  
-    .highlight {
-      border: 2px solid #27ae60;
-      animation: pulse 1.5s infinite;
-    }
 
   .search-box {
   position: relative;
@@ -450,12 +453,17 @@
 
   
 @media (max-width:768px) {
-
-  .Head {
+.Head {
       text-align: start;
       margin-bottom: 20px;
       font-size: 1rem;
     }
+
+.Head h1{
+ 
+  font-size: 3rem;
+}
+  
 
 }
 @media (min-width:768px) {

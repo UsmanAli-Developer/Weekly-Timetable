@@ -29,7 +29,7 @@
     // Speech system in build ai voice //
 
 
-    let hoverTimer;
+ let hoverTimer;
 
 
 document.body.addEventListener("mouseover", (e) => {
@@ -49,14 +49,14 @@ document.body.addEventListener("mouseover", (e) => {
       speech.lang = "en-US"; 
 
       window.speechSynthesis.speak(speech);
-    }, 5000); // 4 second hover
+    }, 5000); // 5 second hover
   }
 });
 
 
 document.body.addEventListener("mouseout", () => {
   clearTimeout(hoverTimer);
-  window.speechSynthesis.cancel(); // Stop voice
+  window.speechSynthesis.cancel();
 });
 
 
@@ -163,9 +163,3 @@ document.body.addEventListener("mouseout", () => {
     }
   });
 
-gsap.from(".logo", {
-  duration: 2,
-  scale: 0,
-  opacity: 0,
-  ease: "back.out(1.7)"
-});
